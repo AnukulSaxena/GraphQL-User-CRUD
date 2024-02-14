@@ -2,7 +2,7 @@
   "name": "graphql-user-crud",
   "version": "1.0.0",
   "description": "GraphQL API for User CRUD operations",
-  "main": "index.js",
+  "main": "src/server/index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
