@@ -18,7 +18,7 @@ app.use(cors());
 const server = new ApolloServer({ typeDefs, resolvers });
 
 server.start().then(() => {
-    app.use('/', expressMiddleware(server))
+    app.use('/graphql', expressMiddleware(server))
     mongoose.connect(process.env.MONGODB_URI)
         .then(() => {
             console.log('Connected to MongoDB');
